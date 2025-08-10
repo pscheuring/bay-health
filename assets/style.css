@@ -1,0 +1,89 @@
+/* Sidebar container - fixed position on top left */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 5rem;
+    padding: 1rem;
+    z-index: 999;
+    transition: width 0.1s ease-in-out;
+}
+
+/* Expand sidebar when hovered */
+.sidebar:hover {
+    width: 16rem;
+    background-color: rgb(215, 215, 215);
+}
+
+/* Prevent text wrapping in collapsed state */
+.sidebar .nav-link {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Hide nav-link labels when sidebar is collapsed */
+.sidebar:not(:hover) .nav-link span {
+    display: none;
+}
+
+/* Icon styling inside sidebar */
+.sidebar .nav-link i {
+    opacity: 1;
+    transition: opacity 0.1s ease-in-out;
+    color: rgb(71, 158, 116); /* dark green */
+}
+
+/* Icon color when active */
+.sidebar .nav-pills .nav-link.active i {
+    color: white;
+}
+
+/* Active nav-link styling */
+.sidebar .nav-pills .nav-link.active {
+    background-color: rgb(71, 158, 116); /* dark green */
+    color: white;
+    border-radius: 0.375rem; /* optional rounded corners */
+}
+
+/* Text color for active nav-link */
+.sidebar .nav-pills .nav-link.active span {
+    color: white;
+}
+
+/* Sidebar header container */
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    overflow: hidden;
+    padding: 5px 5px 12px 5px;
+    height: 50px;
+    width: 50px;
+    color: green;
+}
+
+/* Label styling */
+.sidebar .nav-link span {
+    color: rgb(71, 158, 116);
+    font-weight: normal;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 0.95rem;
+}
+
+/* Star icons */
+.bi.bi-star,
+.bi.bi-star-fill {
+    color: rgb(71, 158, 116);
+}
+
+/* Exercise card hover effect */
+.exercise-card {
+    transition: background-color 0.3s ease;
+}
+
+.exercise-card:hover {
+    background-color: #f1f5f9; /* light gray-blue */
+    cursor: pointer;
+}
