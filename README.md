@@ -5,7 +5,7 @@ The app combines **personalized exercise recommendations** from an LLM with a **
 
 ---
 
-## 📌 Goal & Motivation
+## Goal & Motivation
 
 Our core idea:  
 Many strength athletes (especially beginners) underestimate risks such as **overtraining** and do not always optimally perform exercises in relation to existing complaints.  
@@ -16,14 +16,14 @@ BayHealth addresses this gap by:
 
 ---
 
-## 🖥 Framework: Dash
+## Framework: Dash
 
 BayHealth is built with **[Dash](https://dash.plotly.com/)** – a Python framework for interactive web applications based on **Flask**.  
 Dash combines frontend (HTML, CSS, interactions) and backend (callback logic, data processing) in Python, enabling rapid development without a separate JavaScript frontend.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 .
@@ -50,7 +50,7 @@ Dash combines frontend (HTML, CSS, interactions) and backend (callback logic, da
 
 ---
 
-## 🔄 Pages & Communication
+## Pages & Communication
 
 ### Home (`pages/home`)
 - Serves as the entry point to the application.
@@ -87,7 +87,7 @@ Dash combines frontend (HTML, CSS, interactions) and backend (callback logic, da
 
 ---
 
-## 🗄 Data Handling: `dcc.Store`
+## Data Handling: `dcc.Store`
 
 The app uses several `dcc.Store` components to store data **client-side** and share it between pages:
 
@@ -103,7 +103,7 @@ The app uses several `dcc.Store` components to store data **client-side** and sh
 
 ---
 
-## 🤖 LLM Integration (Mistral API)
+## LLM Integration (Mistral API)
 
 In the Exercises page, the Mistral API (`mistral-small-latest`) is called to evaluate whether an exercise is suitable for the user.
 
@@ -122,7 +122,7 @@ In the Exercises page, the Mistral API (`mistral-small-latest`) is called to eva
 
 ---
 
-## 📊 Muscle Load Model
+## Muscle Load Model
 
 ### 1. Data Basis
 - `MUSCLE_MATRIX` from `constants.py` (based on exrx.net)
@@ -172,7 +172,7 @@ with
 
 ---
 
-## 🚀 Start & Installation
+## Start & Installation
 
 **Requirements:**
 - Python ≥ 3.12
